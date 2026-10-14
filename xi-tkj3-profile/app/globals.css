@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-node-bg text-node-text font-body;
+}
+
+/* Latar belakang grid tipis, kesan "blueprint jaringan" */
+.bg-network-grid {
+  background-image: linear-gradient(#1f2a44 1px, transparent 1px),
+    linear-gradient(90deg, #1f2a44 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Garis koneksi antar elemen (dekorasi tema jaringan) */
+.connector-line {
+  background: linear-gradient(90deg, transparent, #3ddc97, transparent);
+  height: 1px;
+}
